@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <title>Sushi restaurant</title>
+</head>
+<body>
+    <header>
+        <img src="" id="header-img">
+        <h1>Sushi restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order-form">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Menu</h2>
+            <article>
+                <img src="philadephia.jpg" alt="Philadephia sushi">
+                <h3>Philadephia sushi</h3>
+                <p>Philadelphia Original rolls, prepared according to an authentic recipe, 
+                    are a time-tested classic that is still one of the flagships of Japanese cuisine 
+                    around the world.
+                    The traditional combination of salmon, rice, soft cream cheese and the freshness 
+                    of cucumber with avocado make Philadelphia an extremely bright and appetizing dish, 
+                    the variety of flavors of which allows you to abstract from everything mundane 
+                    and move to the land of the Morning Sun.</p>
+            </article>
+            <article>
+                <img src="gunkan-spice-shrimp.jpg" alt="Hunkan spice shrimp">
+                <h3>Hunkan spice shrimp</h3>
+                <p>
+                    Gunkan Spice Salmon is one of the representatives of traditional Japanese cuisine 
+                    with a spicy taste. 
+                    Spice sauce adds fire to the salmon and reveals its "buttery" essence as best as possible. Lovers of spice and simplicity will definitely like it.
+                </p>
+            </article>
+            <article>
+                <img src="salmon.jpg" alt="Salmon sushi">
+                <h3>Salmon sushi</h3>
+                <p>Prepared according to a classic and time-tested recipe, 
+                    sushi salmon is a wonderful combination of traditional Japanese minimalism, 
+                    as well as a distinctive culinary aesthetic, 
+                    thanks to which this dish best reveals the style, 
+                    the power of the land where the sun rises.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Place your order</h2>
+            <!-- Here I connected a form server which is included in the GH Student pack.
+            It's a lot easier to test this way :thinking_face: -->
+            <form action="https://send.pageclip.co/rehqtl62ey1qSveslYzEiZyS79jXR2EQ/place-order" class="pageclip-form" method="post">                
+                <label for="philadephia"> Philadephia sushi amount:</label>
+                <input type="number" id="philadephia" name="philadephia" value="0" min="1" max="25" size="2"> 
+                <br>
+
+                <label for="hunkan"> Hunkan spice shrimp amount:</label>
+                <input type="number" id="hunkan" name="hunkan" value="0" min="0" max="25" size="2">
+                <br>
+
+                <label for="salmon"> Salmon sushi x amount:</label>
+                <input type="number" id="salmon" name="salmon" value="0" min="0" max="25" size="2">
+                <br>
+                
+
+                <input type="submit" value="Go to Checkout">
+            </form>
+        </section>
+    </main>
+    <footer>Made with ❤️ by artm04</footer>
+
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+</body>
+</html>
